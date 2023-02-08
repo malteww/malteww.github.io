@@ -1,0 +1,8 @@
+
+
+
+
+implementer cv och galleri
+mjukare transition mellan sidorna
+mobill-anpassa alla sidorna
+opasity på bakgrund men inte texten
