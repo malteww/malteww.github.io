@@ -1,1 +1,6 @@
-# malteww.github.io
+# malteww.github.io 
+
+```
+npm install
+npm run start
+```
