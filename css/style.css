@@ -1,0 +1,191 @@
+@font-face {
+  font-display: swap;
+  font-family: DejaVu Sans Mono;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/DejaVuSansMono.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: DejaVu Sans Mono;
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/DejaVuSansMono-Oblique.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: DejaVu Sans Mono;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/DejaVuSansMono-Bold.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: DejaVu Sans Mono;
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/DejaVuSansMono-BoldOblique.ttf');
+}
+
+:root {
+  --color-dark: #252525;
+  --color-light: #fff;
+  --color-primary: #d42222;
+  --color-light-primary: #ffcccc;
+  --font-family: 'DejaVu Sans Mono', monospace;
+  --size-step-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --size-step-1: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
+  --size-step-2: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);
+  --size-step-3: clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);
+  --size-step-4: clamp(2.44rem, calc(2.05rem + 1.93vw), 3.55rem);
+}
+
+body {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-family);
+  font-size: var(--size-step-0);
+  padding: 1rem;
+}
+
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+nav ul,
+article,
+footer {
+  outline: 1px solid var(--color-dark);
+}
+
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--size-step-4);
+}
+
+h2 {
+  font-size: var(--size-step-3);
+}
+
+h3 {
+  font-size: var(--size-step-2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 1px;
+
+  &>* {
+    outline: 1px solid var(--color-dark);
+    padding: 0.5rem;
+  }
+}
+
+.flex-items {
+  display: flex;
+  flex-wrap: wrap;
+
+  &>li {
+    margin: 0.25em;
+    padding: 0.25em 0.5em;
+    outline: 1px solid var(--color-dark);
+    height: fit-content;
+  }
+}
+
+footer {
+  text-align: right;
+}
+
+figure.img-container {
+  padding: 0;
+
+  & img {
+    filter: saturate(0);
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &[href^="http"]::after,
+  [href^="https://"]::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='rgb(212, 34, 34)' class='bi bi-arrow-up-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z'/%3E%3C/svg%3E");
+  }
+
+  &:focus-visible {
+    outline: 3px dotted var(--color-dark);
+    padding: 0.2em;
+  }
+}
+
+nav li a::before {
+  content: '#';
+}
+
+article:has(h2:target) {
+  animation: colorChange 2s cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: initial;
+  }
+
+  50% {
+    background-color: var(--color-light-primary);
+  }
+
+  100% {
+    background-color: initial;
+  }
+}
+
+@supports not selector(:has(a, b)) {
+  :target {
+    text-decoration: underline 2px solid var(--color-primary);
+  }
+}
+
+::-moz-selection {
+  background: var(--color-light-primary);
+  color: var(--color-dark);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--color-light-primary);
+  color: var(--color-dark);
+  text-shadow: none;
+}
+
+img:before {
+  content: "";
+  display: block;
+  margin-bottom: 10px;
+}
+
+img:after {
+  content: "(url: " attr(src) ")";
+}
