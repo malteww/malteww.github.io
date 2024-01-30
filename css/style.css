@@ -1,37 +1,33 @@
 @font-face {
-  font-display: swap;
-  font-family: DejaVu Sans Mono;
+  font-family: 'DejaVu Sans Mono';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/DejaVuSansMono.ttf');
+  src: url('/fonts/dejavusansmono-webfont.woff') format(woff);
 }
 
 @font-face {
-  font-display: swap;
-  font-family: DejaVu Sans Mono;
+  font-family: 'DejaVu Sans Mono';
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/DejaVuSansMono-Oblique.ttf');
+  src: url('/fonts/dejavusansmono-oblique-webfont.woff') format(woff);
 }
 
 @font-face {
-  font-display: swap;
-  font-family: DejaVu Sans Mono;
+  font-family: 'DejaVu Sans Mono';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/DejaVuSansMono-Bold.ttf');
+  src: url('/fonts/dejavusansmono-bold-webfont.woff') format(woff);
 }
 
 @font-face {
-  font-display: swap;
-  font-family: DejaVu Sans Mono;
+  font-family: 'DejaVu Sans Mono';
   font-style: italic;
   font-weight: 700;
-  src: url('../fonts/DejaVuSansMono-BoldOblique.ttf');
+  src: url('/fonts/dejavusansmono-boldoblique-webfont.woff') format(woff);
 }
 
 :root {
-  --color-dark: #252525;
+  --color-dark: #0b090a;
   --color-light: #fff;
   --color-primary: #d42222;
   --color-light-primary: #ffcccc;
@@ -48,6 +44,7 @@ body {
   color: var(--color-dark);
   font-family: var(--font-family);
   font-size: var(--size-step-0);
+  font-weight: 400;
   padding: 1rem;
 }
 
@@ -83,9 +80,14 @@ h3 {
   font-size: var(--size-step-2);
 }
 
+p {
+  hyphens: auto;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-template-rows: 1fr;
   gap: 1px;
 
   &>* {
@@ -106,12 +108,13 @@ h3 {
   }
 }
 
+
 footer {
   text-align: right;
 }
 
 figure.img-container {
-  padding: 0;
+  padding: 0 !important;
 
   & img {
     filter: saturate(0);
@@ -144,7 +147,7 @@ nav li a::before {
   content: '#';
 }
 
-article:has(h2:target) {
+header:has(h2:target) {
   animation: colorChange 2s cubic-bezier(0.6, 0, 0.4, 1);
 }
 
@@ -188,4 +191,10 @@ img:before {
 
 img:after {
   content: "(url: " attr(src) ")";
+}
+
+@media screen and (max-width: 933px) {
+  header.grid>p:nth-child(3) {
+    grid-column: 1/-1;
+  }
 }
