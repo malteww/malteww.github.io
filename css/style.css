@@ -183,10 +183,15 @@ header:has(h2:target) {
   text-shadow: none;
 }
 
+figure {
+  display: grid;
+  place-content: center;
+  background-color: var(--color-light-primary);
+}
+
 img:before {
   content: "";
   display: block;
-  margin-bottom: 10px;
 }
 
 img:after {
