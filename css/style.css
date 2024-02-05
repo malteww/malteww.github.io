@@ -183,7 +183,7 @@ header:has(h2:target) {
   text-shadow: none;
 }
 
-figure {
+figure.img-container {
   display: grid;
   place-content: center;
   background-color: var(--color-light-primary);
