@@ -15,6 +15,7 @@
   font-family: 'DejaVu Sans Mono';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('/fonts/dejavusansmono-webfont.woff') format(woff);
 }
 
@@ -22,6 +23,7 @@
   font-family: 'DejaVu Sans Mono';
   font-style: italic;
   font-weight: 400;
+  font-display: swap;
   src: url('/fonts/dejavusansmono-oblique-webfont.woff') format(woff);
 }
 
@@ -29,6 +31,7 @@
   font-family: 'DejaVu Sans Mono';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url('/fonts/dejavusansmono-bold-webfont.woff') format(woff);
 }
 
@@ -36,6 +39,7 @@
   font-family: 'DejaVu Sans Mono';
   font-style: italic;
   font-weight: 700;
+  font-display: swap;
   src: url('/fonts/dejavusansmono-boldoblique-webfont.woff') format(woff);
 }
 
