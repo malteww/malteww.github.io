@@ -14,17 +14,18 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
   <link rel="manifest" href="site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <header class="grid">
+  <header class="grid header">
     <h1>Link Pantry</h1>
     <h2><i>A Collection Of Links on various topics</i></h2>
     <p>
@@ -38,7 +39,6 @@
       <li><a href="#blogroll">Blogroll</a></li>
       <li><a href="#bookish">Bookish</a></li>
       <li><a href="#css">CSS</a></li>
-      <li><a href="#fonts">Fonts</a></li>
       <li><a href="#free-content">Free Content</a></li>
       <li><a href="#guides">Guides</a></li>
       <li><a href="#html">HTML</a></li>
@@ -50,6 +50,7 @@
       <li><a href="#programming">Programming</a></li>
       <li><a href="#search-engines">Search Engines</a></li>
       <li><a href="#tools">Tools</a></li>
+      <li><a href="#typography">Typography</a></li>
       <li><a href="#web-design">Web Design</a></li>
       <li><a href="#web-development">Web Development</a></li>
       <li><a href="#web-directories">Web Directories</a></li>
@@ -61,7 +62,7 @@
     <!-- BLOGROLL -->
     <article class="grid">
       <header>
-        <h2 id="blogroll"><a href="#blogroll" aria-label="link to Blogroll">#</a>Blogroll</h2>
+        <h2 id="blogroll"><a href="#blogroll" aria-label="link to Blogroll"><span>#</span></a>Blogroll</h2>
       </header>
 
       <p>
@@ -167,14 +168,31 @@
       </p>
 
       <p>
+        This is Geoffrey Litt's blog, where he talks mostly about AI + malleable software.
         <a href="https://www.geoffreylitt.com/#writing" target="_blank">geoffreylitt.com</a>
       </p>
 
-      <p><a href="https://localghost.dev/blog/" target="_blank">localghost.dev</a></p>
+      <p>
+        Sophie's blog is reminiscent of the old web. Go have a read at:
+        <a href="https://localghost.dev/blog/" target="_blank">localghost.dev</a>
+      </p>
 
       <p>
+        Juha-Matti Santala's writes regularly about technology, communities and life around me.
         <a href="https://hamatti.org/blog/" target="_blank">hamatti.org</a>
       </p>
+
+      <p>
+        From 9elements blog you can read about web-development.
+        <a href="https://9elements.com/blog/" target="_blank">9elements.com/blog/</a>
+      </p>
+
+      <p>
+        Geoff is designer and developer. He writes about the web and tries to help people to become better front-end
+        developers.
+        <a href="https://geoffgraham.me/blog/" target="_blank">geoffgraham.me</a>
+      </p>
+
       <figure class="img-container">
         <img src="img/magazine-stand.jpg" alt="A Magazine Stand" width="300" loading="eager">
       </figure>
@@ -184,7 +202,7 @@
     <!-- BOOKISH -->
     <article class="grid">
       <header>
-        <h2 id="bookish"><a href="#bookish" aria-label="link to Bookish">#</a>Bookish</h2>
+        <h2 id="bookish"><a href="#bookish" aria-label="link to Bookish"><span>#</span></a>Bookish</h2>
       </header>
 
       <p>
@@ -255,7 +273,7 @@
     <!-- CSS -->
     <article class="grid">
       <header>
-        <h2 id="css"><a href="#css" aria-label="link to CSS">#</a>CSS</h2>
+        <h2 id="css"><a href="#css" aria-label="link to CSS"><span>#</span></a>CSS</h2>
       </header>
 
       <p>
@@ -313,8 +331,8 @@
 
       <p>
         Discover the secrets behind the Flexbox Holy Albatross:
-        <a href="https://heydonworks.com/article/the-flexbox-holy-albatross/" target="_blank">What is the Flexbox Holy
-          Albatross?</a>
+        <a href="https://heydonworks.com/article/the-flexbox-holy-albatross-reincarnated/" target="_blank">What is the
+          Flexbox Holy Albatross?</a>
       </p>
 
 
@@ -379,62 +397,27 @@
         list of classless CSS themes and frameworks.
       </p>
 
+      <p>
+        This is a incomplete list of mistakes in the <a href="https://wiki.csswg.org/ideas/mistakes"
+          target="_blank">design of
+          css</a>
+      </p>
+
+      <p>
+        Learn what the
+        <a href="https://9elements.com/blog/the-devil-s-albatross/" target="_blank">the devils albatross</a> is from the
+        9elements blog.
+      </p>
       <figure class="img-container">
-        <img src="img/girl-face-paint.jpg" alt="A girl with face paint" width="300" loading="lazy">
+        <img src="img/classic-car.jpg" alt="Dress shoes and a necktie" width="300" loading="lazy">
       </figure>
-    </article>
-
-    <!-- FONTS -->
-    <article class="grid">
-      <header>
-        <h2 id="fonts"><a href="#fonts" aria-label="link to Fonts">#</a>Fonts</h2>
-      </header>
-
-      <figure>
-        <figcaption>A list of different monospaced fonts</figcaption>
-        <ul class="flex-items">
-          <li>
-            <a href="https://fonts.google.com/specimen/Victor+Mono?query=vic&classification=Monospace&stroke=Sans+Serif"
-              target="_blank">Victor Mono</a>
-          </li>
-          <li>
-            <a href="https://berkeleygraphics.com/typefaces/berkeley-mono/" target="_blank">Berkeley Mono</a>
-          </li>
-          <li>
-            <a href="https://tosche.net/fonts/comic-code" target="_blank">Comic Code</a>
-          </li>
-        </ul>
-      </figure>
-
-      <figure>
-        <figcaption>Emojis</figcaption>
-        <ul class="flex-items">
-          <li>
-            <a href="https://lucide.dev/" target="_blank">Lucide icons</a>
-          </li>
-          <li>
-            <a href="https://fonts.google.com/noto/specimen/Noto+Emoji" target="_blank">Noto Emoji</a>
-          </li>
-          <li><a href="https://emojiterra.com/" target="_blank">emojiterra.com</a></li>
-        </ul>
-      </figure>
-
-      <p>
-        Explore a collection of classic text mode fonts at The Ultimate Oldschool PC Font Pack. Check out some of the
-        <a href="https://int10h.org/oldschool-pc-fonts/" target="_blank">Old School PC fonts</a>.
-      </p>
-
-      <p>
-        Discover good font pairings used in real-world designs at
-        <a href="https://fontsinuse.com/" target="_blank">FontsInUse.com</a>.
-      </p>
-
     </article>
 
     <!-- FREE CONTENT -->
     <article class="grid">
       <header>
-        <h2 id="free-content"><a href="#free-content" aria-label="link to Free Content">#</a>Free Content</h2>
+        <h2 id="free-content"><a href="#free-content" aria-label="link to Free Content"><span>#</span></a>Free Content
+        </h2>
       </header>
 
       <figure>
@@ -480,7 +463,7 @@
       </p>
 
       <figure class="img-container">
-        <img src="img/birds-flying-beach.jpg" alt="Birds flying over a beach" width="300" loading="lazy">
+        <img src="img/berries.jpg" alt="Birds flying over a beach" width="300" loading="lazy">
       </figure>
 
     </article>
@@ -488,7 +471,7 @@
     <!-- GUIDES -->
     <article class="grid">
       <header>
-        <h2 id="guides"><a href="#guides" aria-label="link to Guides">#</a>Guides</h2>
+        <h2 id="guides"><a href="#guides" aria-label="link to Guides"><span>#</span></a>Guides</h2>
       </header>
 
       <p>
@@ -532,8 +515,13 @@
         examples. <a href="https://gwern.net/search" target="_blank">gwern.net/search</a>
       </p>
 
+      <p>
+        <a href="https://9elements.com/blog/css-border-radius-can-do-that/" target="_blank">CSS border-radius can do
+          that?</a> Learn how to create a fun animated css border.
+      </p>
+
       <figure class="img-container">
-        <img src="img/map.jpg" alt="Woman consolting a map" width="300" loading="lazy">
+        <img src="img/map-europe.jpg" alt="Woman consolting a map" width="300" loading="lazy">
       </figure>
 
     </article>
@@ -541,7 +529,7 @@
     <!-- HTML -->
     <article class="grid">
       <header>
-        <h2 id="html"><a href="#html" aria-label="link to HTML">#</a>HTML</h2>
+        <h2 id="html"><a href="#html" aria-label="link to HTML"><span>#</span></a>HTML</h2>
       </header>
 
       <p>
@@ -586,7 +574,8 @@
     <!--  IDIOSYNCRATIC  -->
     <article class="grid">
       <header>
-        <h2 id="idiosyncratic"><a href="#idiosyncratic" aria-label="link to Idiosyncratic">#</a>Idiosyncratic
+        <h2 id="idiosyncratic"><a href="#idiosyncratic"
+            aria-label="link to Idiosyncratic"><span>#</span></a>Idiosyncratic
         </h2>
       </header>
 
@@ -614,7 +603,7 @@
     <!-- NEWS -->
     <article class="grid">
       <header>
-        <h2 id="news"><a href="#news" aria-label="link to News">#</a>News</h2>
+        <h2 id="news"><a href="#news" aria-label="link to News"><span>#</span></a>News</h2>
       </header>
 
       <p lang="sv">
@@ -639,7 +628,8 @@
     <!-- ONLINE GAMES -->
     <article class="grid">
       <header>
-        <h2 id="online-games"><a href="#online-games" aria-label="link to Online Games">#</a>Online Games</h2>
+        <h2 id="online-games"><a href="#online-games" aria-label="link to Online Games"><span>#</span></a>Online Games
+        </h2>
       </header>
 
       <p>
@@ -658,7 +648,7 @@
     <!-- PIRACY -->
     <article class="grid">
       <header>
-        <h2 id="piracy"><a href="#piracy" aria-label="link to Piracy">#</a>Piracy</h2>
+        <h2 id="piracy"><a href="#piracy" aria-label="link to Piracy"><span>#</span></a>Piracy</h2>
       </header>
 
       <p>
@@ -683,7 +673,8 @@
     <!-- PERSONAL WEBSITES -->
     <article class="grid">
       <header>
-        <h2 id="personal-websites"><a href="#personal-websites" aria-label="link to Personal Websites">#</a>Personal
+        <h2 id="personal-websites"><a href="#personal-websites"
+            aria-label="link to Personal Websites"><span>#</span></a>Personal
           Websites</h2>
       </header>
 
@@ -813,15 +804,20 @@
         hans personliga hemsida.
       </p>
 
+      <p>
+
+        <a href="https://projects.kwon.nyc/internet-is-fun/" target="">projects.kwon.nyc/internet-is-fun</a>
+      </p>
+
       <figure class="img-container">
-        <img src="img/sun-flowers.jpg" alt="A field of sun flowers" width="300" loading="lazy">
+        <img src="img/leopard-lacewing.png" alt="A field of sun flowers" width="300" loading="lazy">
       </figure>
     </article>
 
     <!-- PROGRAMMING -->
     <article class="grid">
       <header>
-        <h2 id="programming"><a href="#programming" aria-label="link to Programming">#</a>Programming</h2>
+        <h2 id="programming"><a href="#programming" aria-label="link to Programming"><span>#</span></a>Programming</h2>
       </header>
 
       <figure>
@@ -881,7 +877,7 @@
     <!-- SEARCH ENGINEES -->
     <article class="grid">
       <header>
-        <h2 id="search-engines"><a href="#search-engines" aria-label="link to Search Engines">#</a>Search
+        <h2 id="search-engines"><a href="#search-engines" aria-label="link to Search Engines"><span>#</span></a>Search
           Engines</h2>
       </header>
       <p>
@@ -927,7 +923,7 @@
     <!-- TOOLS -->
     <article class="grid">
       <header>
-        <h2 id="tools"><a href="#tools" aria-label="link to Tools">#</a>Tools</h2>
+        <h2 id="tools"><a href="#tools" aria-label="link to Tools"><span>#</span></a>Tools</h2>
       </header>
 
       <p>
@@ -1023,10 +1019,70 @@
       </figure>
     </article>
 
+    <!-- TYPOGRAPHY -->
+    <article class="grid">
+      <header>
+        <h2 id="typography"><a href="#typography" aria-label="link to typography"><span>#</span></a>Typography</h2>
+      </header>
+
+      <figure>
+        <figcaption>A list of different monospaced fonts</figcaption>
+        <ul class="flex-items">
+          <li>
+            <a href="https://fonts.google.com/specimen/Victor+Mono?query=vic&classification=Monospace&stroke=Sans+Serif"
+              target="_blank">Victor Mono</a>
+          </li>
+          <li>
+            <a href="https://berkeleygraphics.com/typefaces/berkeley-mono/" target="_blank">Berkeley Mono</a>
+          </li>
+          <li>
+            <a href="https://tosche.net/fonts/comic-code" target="_blank">Comic Code</a>
+          </li>
+        </ul>
+      </figure>
+
+      <p>
+        A book about <a href="https://practicaltypography.com/" target="_blank">practical typography</a>.
+      </p>
+
+      <figure>
+        <figcaption>Emojis</figcaption>
+        <ul class="flex-items">
+          <li>
+            <a href="https://lucide.dev/" target="_blank">Lucide icons</a>
+          </li>
+          <li>
+            <a href="https://fonts.google.com/noto/specimen/Noto+Emoji" target="_blank">Noto Emoji</a>
+          </li>
+          <li><a href="https://emojiterra.com/" target="_blank">emojiterra.com</a></li>
+        </ul>
+      </figure>
+
+      <p>
+        Explore a collection of classic text mode fonts at The Ultimate Oldschool PC Font Pack. Check out some of the
+        <a href="https://int10h.org/oldschool-pc-fonts/" target="_blank">Old School PC fonts</a>.
+      </p>
+
+      <p>
+        Discover good font pairings used in real-world designs at
+        <a href="https://fontsinuse.com/" target="_blank">FontsInUse.com</a>.
+      </p>
+
+      <p>
+        A serif-based font from Google called "Bitter."
+        <a href="https://fonts.google.com/specimen/Bitter" target="_blank">fonts.google.com/specimen/Bitter</a>
+      </p>
+
+      <figure class="img-container">
+        <img src="img/calligraphy-brush.jpg" alt="Fridge letters" width="300" loading="lazy">
+      </figure>
+
+    </article>
+
     <!-- WEB DESIGN -->
     <article class="grid">
       <header>
-        <h2 id="web-design"><a href="#web-design" aria-label="link to Web Design">#</a>Web Design</h2>
+        <h2 id="web-design"><a href="#web-design" aria-label="link to Web Design"><span>#</span></a>Web Design</h2>
       </header>
 
       <p>
@@ -1050,9 +1106,7 @@
           Web Design</a>.
       </p>
 
-      <p>
-        A book about <a href="https://practicaltypography.com/" target="_blank">practical typography</a>.
-      </p>
+
 
       <p>
         Some cool menu, tooltips, and carouselsel design can be found here:
@@ -1074,15 +1128,26 @@
         <a href="https://design.theguardian.com/" target="_blank">design.theguardian.com</a>
       </p>
 
+      <p>
+        Here are some
+        <a href="https://css-tricks.com/print-inspired-layout-on-the-web/" target="_blank">print inspired layouts on the
+          web</a>
+      </p>
+
+      <p>
+        <a href="https://gridless.design/" target="_blank">gridless.design</a>
+      </p>
+
+
       <figure class="img-container">
-        <img src="img/mosaic.jpg" alt="A mosaic wall" width="300" loading="lazy">
+        <img src="img/copenhagen.jpg" alt="A mosaic wall" width="300" loading="lazy">
       </figure>
     </article>
 
     <!-- WEB DEVLOPMENT -->
     <article class="grid">
       <header>
-        <h2 id="web-development"><a href="#web-development" aria-label="link to Web Development">#</a>Web
+        <h2 id="web-development"><a href="#web-development" aria-label="link to Web Development"><span>#</span></a>Web
           Development</h2>
       </header>
 
@@ -1149,11 +1214,6 @@
       </p>
 
       <p>
-        This is a incomplete list of mistakes in the <a href="https://wiki.csswg.org/ideas/mistakes"
-          target="_blank">design of css</a>
-      </p>
-
-      <p>
         A library of <a href="https://svgl.vercel.app/" target="_blank"> SVG logos</a> from popular companies
         and brands.
       </p>
@@ -1201,15 +1261,20 @@
         <a href="https://toolkit.addy.codes/" target="_blank">toolkit.addy.codes</a>
       </p>
 
+      <p>
+        Create dead simple, drag & drop websites for anything with <a href="https://paper.mmm.dev/"
+          target="_blank">paper.mmm.dev</a>
+      </p>
+
       <figure class="img-container">
-        <img src="img/job-meeting.jpg" alt="A job meeting" width="300" loading="lazy">
+        <img src="img/honey-bee.jpg" alt="A job meeting" width="300" loading="lazy">
       </figure>
     </article>
 
     <!-- WEB DIRECTORIES -->
     <article class="grid">
       <header id="tooltip-header">
-        <h2 id="web-directories"><a href="#web-directories" aria-label="link to Web Directories">#</a>Web
+        <h2 id="web-directories"><a href="#web-directories" aria-label="link to Web Directories"><span>#</span></a>Web
           Directories
         </h2>
       </header>
@@ -1297,14 +1362,14 @@
       </p>
 
       <figure class="img-container">
-        <img src="img/post-it-notes.jpg" alt="Post it notes on a computer screen" width="300" loading="lazy">
+        <img src="img/library-2.jpg" alt="Large archive of files" width="300" loading="lazy">
       </figure>
     </article>
 
     <!-- WEBRINGS -->
     <article class="grid">
       <header>
-        <h2 id="webrings"><a href="#webrings" aria-label="link to Web Rings">#</a>Web Rings</h2>
+        <h2 id="webrings"><a href="#webrings" aria-label="link to Web Rings"><span>#</span></a>Web Rings</h2>
       </header>
 
       <ul class="flex-items">
