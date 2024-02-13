@@ -1,1 +1,0 @@
-fonts -> typography -> flytt img
