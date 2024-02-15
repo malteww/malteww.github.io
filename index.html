@@ -5,8 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Link Pantry</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
   <meta name="description" content="A Collection Of Links on various topics">
 
   <meta property="og:title" content="Link Pantry">
@@ -21,6 +20,13 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#fafafa">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
@@ -33,6 +39,9 @@
     <p>
       This was created by Malte. Take a look at the source code at <a
         href="https://github.com/malteww/sandbox/tree/main/barebone-grid-fun" target="_blank">github.com</a>
+    </p>
+    <p>
+      Based on this stylesheet <a href="https://stylestage.dev/styles/barebones/" target="_blank">styles/barebones</a>
     </p>
   </header>
 
@@ -56,14 +65,13 @@
       <li><a href="#web-design">Web Design</a></li>
       <li><a href="#web-development">Web Development</a></li>
       <li><a href="#web-directories">Web Directories</a></li>
-      <!--<li><a href="#webrings">Web Rings</a></li>-->
     </ul>
   </nav>
 
   <main>
     <!-- BLOGROLL -->
     <article class="grid">
-      <header>
+      <header class="header-bg blogroll">
         <h2 id="blogroll"><a href="#blogroll" aria-label="link to Blogroll"><span>#</span></a>Blogroll</h2>
       </header>
 
@@ -208,7 +216,7 @@
       </p>
 
       <p>
-        Personal blog of fLaMEd🔥<a href="https://flamedfury.com/posts/" target="_blank">flamedfury.com</a>
+        Personal blog of fLaMEd🔥 <a href="https://flamedfury.com/posts/" target="_blank">flamedfury.com</a>
       </p>
 
       <p>
@@ -216,15 +224,15 @@
         <a href="https://sonnet.io/blog" target="_blank">sonnet.io/blog</a>
       </p>
 
-      <figure class="img-container">
+      <!-- <figure class="img-container">
         <img src="img/magazine-stand.jpg" alt="A Magazine Stand" width="300" loading="eager">
-      </figure>
+      </figure> -->
 
     </article>
 
     <!-- BOOKISH -->
     <article class="grid">
-      <header>
+      <header class="header-bg bookish">
         <h2 id="bookish"><a href="#bookish" aria-label="link to Bookish"><span>#</span></a>Bookish</h2>
       </header>
 
@@ -283,19 +291,14 @@
           target="_blank">ISFDB</a>, Internet Speculative Fiction Database.
       </p>
 
-      <p lang="sv">
-        <a href="https://fojo.se/faktajouren/category/fordjupning/lastips/" target="_blank">Lästips</a> på
-        faklitteratur från medieinstitutet Fojo.
-      </p>
-
-      <figure class="img-container">
+      <!-- <figure class="img-container">
         <img src="img/books.jpg" alt="A library of books" width="300" loading="lazy">
-      </figure>
+      </figure> -->
     </article>
 
     <!-- CSS -->
     <article class="grid">
-      <header>
+      <header class="header-bg css">
         <h2 id="css"><a href="#css" aria-label="link to CSS"><span>#</span></a>CSS</h2>
       </header>
 
@@ -426,14 +429,20 @@
         <a href="https://9elements.com/blog/the-devil-s-albatross/" target="_blank">the devils albatross</a> is from the
         9elements blog.
       </p>
-      <figure class="img-container">
+
+      <p>
+        A CSS project boilerplate, created and used by Andy Bell and Set Studio.
+        <a href="https://piccalil.li/blog/a-css-project-boilerplate/" target="_blank">CSS Project Boilerplate</a>
+      </p>
+
+      <!-- <figure class="img-container">
         <img src="img/classic-car.jpg" alt="Dress shoes and a necktie" width="300" loading="lazy">
-      </figure>
+      </figure> -->
     </article>
 
     <!-- FREE CONTENT -->
     <article class="grid">
-      <header>
+      <header class="header-bg free-content">
         <h2 id="free-content"><a href="#free-content" aria-label="link to Free Content"><span>#</span></a>Free Content
         </h2>
       </header>
@@ -477,15 +486,15 @@
         digitized magazines and monthly publications.
       </p>
 
-      <figure class="img-container">
+      <!-- <figure class="img-container">
         <img src="img/berries.jpg" alt="Birds flying over a beach" width="300" loading="lazy">
-      </figure>
+      </figure> -->
 
     </article>
 
     <!-- GUIDES -->
     <article class="grid">
-      <header>
+      <header class="header-bg guides">
         <h2 id="guides"><a href="#guides" aria-label="link to Guides"><span>#</span></a>Guides</h2>
       </header>
 
@@ -540,15 +549,15 @@
         <a href="https://sonnet.io/posts/use-rainbow/" target="_blank">sonnet.io/posts/use-rainbow/</a>
       </p>
 
-      <figure class="img-container">
+      <!-- <figure class="img-container">
         <img src="img/map-europe.jpg" alt="Woman consolting a map" width="300" loading="lazy">
-      </figure>
+      </figure> -->
 
     </article>
 
     <!-- HTML -->
     <article class="grid">
-      <header>
+      <header class="header-bg html">
         <h2 id="html"><a href="#html" aria-label="link to HTML"><span>#</span></a>HTML</h2>
       </header>
 
@@ -585,15 +594,20 @@
         This is a cheat sheet for HTML! <a href="https://htmlcheatsheet.com/" target="_blank">HTML Cheat Sheet</a>
       </p>
 
-      <figure class="img-container">
+      <p>
+        <a href="https://justmarkup.com/articles/2021-04-13-html-elements-in-a-tweet/" target="_blank">100 days - 100
+          HTML elements</a>
+      </p>
+
+      <!-- <figure class="img-container">
         <img src="img/steel-scaffolding.jpg" alt="The underside of a powerline" width="300" loading="lazy">
-      </figure>
+      </figure> -->
 
     </article>
 
     <!--  IDIOSYNCRATIC  -->
     <article class="grid">
-      <header>
+      <header class="header-bg idiosyncratic">
         <h2 id="idiosyncratic"><a href="#idiosyncratic"
             aria-label="link to Idiosyncratic"><span>#</span></a>Idiosyncratic
         </h2>
@@ -618,11 +632,31 @@
         <a href="https://www.cameronsworld.net/" target="_blank">cameronsworld.net</a>
       </p>
 
+      <p>
+        <a href="http://endles.horse/" target="_blank">endles.horse</a>
+      </p>
+
+      <p>
+        <a href="https://pointerpointer.com/" target="_blank">pointerpointer.com</a>
+      </p>
+
+      <p>
+        <a href="https://burymewithmymoney.com/" target="_blank">burymewithmymoney.com</a>
+      </p>
+
+      <p>
+        <a href="http://www.windows93.net/" target="_blank">www.windows93.net</a>
+      </p>
+
+      <p>
+        <a href="https://patatap.com/" target="_blank">patatap</a>
+      </p>
+
     </article>
 
     <!-- NEWS -->
     <article class="grid">
-      <header>
+      <header class="header-bg news">
         <h2 id="news"><a href="#news" aria-label="link to News"><span>#</span></a>News</h2>
       </header>
 
@@ -630,7 +664,7 @@
         SVT Datajournalistik är en del av SVT nyheter som jobbar med renodlad datajournalistik. Här kan du finna till
         exempel spotpriset på el,
         eller en lista över Putins spioner. <a href="https://www.svt.se/datajournalistik/"
-          target="_blank">Svt.se/datajournalistik</a>
+          target="_blank">svt.se/datajournalistik</a>
       </p>
 
       <p>
@@ -643,11 +677,22 @@
         about tech in places typically overlooked and underestimated.
       </p>
 
+      <p lang="sv">
+        År 2018 så firade Under Strecket hundra år. Svenska Dagbladet valde ut 350 särskilt intressanta texter – och
+        gjorde dem fritt tillgängliga, för att fira tillfället.
+        <a href="https://www.svd.se/under-strecket-100-ar" target="_blank">Under strecket 100 år</a>
+      </p>
+
+      <p>
+        The Verge is about technology and how it makes us feel. Founded in 2011.
+        <a href="https://www.theverge.com/" target="_blank">theverge.com</a>
+      </p>
+
     </article>
 
     <!-- ONLINE GAMES -->
     <article class="grid">
-      <header>
+      <header class="header-bg online-games">
         <h2 id="online-games"><a href="#online-games" aria-label="link to Online Games"><span>#</span></a>Online Games
         </h2>
       </header>
@@ -663,11 +708,26 @@
         <a href="https://neal.fun/password-game/" target="_blank">The Password Game</a>.
       </p>
 
+      <p>
+        Learn how to create a <a
+          href="https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript"
+          target="_blank">2D Breakout Game</a> A tutorial by MDN docs.
+      </p>
+
+      <p>
+        Battle out your CSS skills at
+        <a href="https://cssbattle.dev/" target="_blank">cssbattle.dev</a>
+      </p>
+
+      <p>
+        Get dropped anywhere from the busy streets of New York to the beautiful beaches of Bali.
+        <a href="https://www.geoguessr.com/" target="_blank">geoguessr.com</a>
+      </p>
     </article>
 
     <!-- PIRACY -->
     <article class="grid">
-      <header>
+      <header class="header-bg piracy">
         <h2 id="piracy"><a href="#piracy" aria-label="link to Piracy"><span>#</span></a>Piracy</h2>
       </header>
 
@@ -678,8 +738,8 @@
 
       <p>
         Looking for a book? <a href="https://annas-archive.org/" target="_blank">Annas archive</a> is the
-        biggest shadow
-        library I've ever seen!
+        biggest shadow library I've ever seen! Library Genesis, Sci-Hub, and Z-Library are among the sites included in
+        this resilient search engine.
       </p>
 
       <p>
@@ -692,93 +752,11 @@
 
     <!-- PERSONAL WEBSITES -->
     <article class="grid">
-      <header>
+      <header class="header-bg personal-websites">
         <h2 id="personal-websites"><a href="#personal-websites"
             aria-label="link to Personal Websites"><span>#</span></a>Personal
           Websites</h2>
       </header>
-
-      <ul class="flex-items">
-        <li>
-          <a href="https://kognise.dev/" target="_blank">kognise.dev</a>
-        </li>
-
-        <li>
-          <a href="https://rachelandrew.co.uk/" target="_blank">rachelandrew.co.uk</a>
-        </li>
-
-        <li>
-          <a href="https://sonnet.io/" target="_blank">sonnet.io</a>
-        </li>
-      </ul>
-
-      <ul class="flex-items">
-        <li>
-          <a href="https://ahoylemon.xyz/" target="_blank">ahoylemon.xyz</a>
-        </li>
-
-        <li>
-          <a href="https://finnarundel.com/" target="_blank">finnarundel.com</a>
-        </li>
-
-        <li>
-          <a href="https://vasilis.nl/" target="_blank">vasilis.nl</a>
-        </li>
-
-        <li>
-          <a href="https://pxlnv.com/" target="_blank">pxlnv.com</a>
-        </li>
-      </ul>
-
-      <ul class="flex-items">
-        <li>
-          <a href="https://matthewrayfield.com/" target="_blank">matthewrayfield.com</a>
-        </li>
-
-        <li>
-          <a href="https://ambientimpact.com/" target="_blank">ambientimpact.com</a>
-        </li>
-
-        <li>
-          <a href="https://chrismorgan.info/" target="_blank">chrismorgan.info</a>
-        </li>
-
-        <li>
-          <a href="https://tholman.com/" target="_blank">tholman.com</a>
-        </li>
-      </ul>
-
-      <ul class="flex-items">
-        <li>
-          <a href="http://www.bananabanana.me/" target="_blank">bananabanana.me</a>
-        </li>
-
-        <li>
-          <a href="https://kokorobot.ca/site/home.html" target="_blank">kokorobot.ca</a>
-        </li>
-
-        <li>
-          <a href="https://jlelse.blog/" target="_blank">jlelse.blog</a>
-        </li>
-      </ul>
-
-      <ul class="flex-items">
-        <li>
-          <a href="https://www.juliendesrosiers.com/blog.php" target="_blank">juliendesrosiers.com</a>
-        </li>
-
-        <li>
-          <a href="https://archive.elliott.computer/elliott-computer-2019-to-2023/" target="_blank">elliott.computer</a>
-        </li>
-
-        <li>
-          <a href="https://bwamp.org/" target="_blank">bwamp.org</a>
-        </li>
-
-        <li>
-          <a href="https://pluralistic.net/" target="_blank">pluralistic.net</a>
-        </li>
-      </ul>
 
       <p>
         A <a href="http://biglist.terraaeon.com/" target="_blank">big list</a> of personal web-sites.
@@ -829,7 +807,7 @@
       </p>
 
       <p>
-        <a href="https://projects.kwon.nyc/internet-is-fun/" target="">projects.kwon.nyc/internet-is-fun</a>
+        <a href="https://projects.kwon.nyc/internet-is-fun/" target="_blank">projects.kwon.nyc/internet-is-fun</a>
       </p>
 
       <p>
@@ -842,14 +820,109 @@
         <a href="https://sadgrl.online/" target="_blank">sadgrl.online</a>
       </p>
 
-      <figure class="img-container">
-        <img src="img/leopard-lacewing.png" alt="A field of sun flowers" width="300" loading="lazy">
+      <p>
+        <a href="https://kognise.dev/" target="_blank" class="xxl-links">kognise.dev</a>
+      </p>
+
+      <figure>
+        <figcaption>Webrings</figcaption>
+        <ul class="flex-items">
+          <li>
+            <a href="https://firechicken.club/" target="_blank">firechicken.club</a>
+          </li>
+          <li>
+            <a href="https://heaventree.xyz/" target="_blank">heaventree.xyz</a>
+          </li>
+        </ul>
       </figure>
+
+      <p>
+        <a href="https://carter.sande.duodecima.technology/" target="_blank">carter.sande.duodecima.technology</a>
+      </p>
+
+      <!--  <ul class="flex-items">
+        <li>
+        </li>
+
+        <li>
+          <a href="https://rachelandrew.co.uk/" target="_blank">rachelandrew.co.uk</a>
+        </li>
+
+        <li>
+          <a href="https://sonnet.io/" target="_blank">sonnet.io</a>
+        </li>
+
+        <li>
+          <a href="https://ahoylemon.xyz/" target="_blank">ahoylemon.xyz</a>
+        </li>
+
+        <li>
+          <a href="https://finnarundel.com/" target="_blank">finnarundel.com</a>
+        </li>
+
+        <li>
+          <a href="https://vasilis.nl/" target="_blank">vasilis.nl</a>
+        </li>
+
+        <li>
+          <a href="https://pxlnv.com/" target="_blank">pxlnv.com</a>
+        </li>
+
+        <li>
+          <a href="https://matthewrayfield.com/" target="_blank">matthewrayfield.com</a>
+        </li>
+
+        <li>
+          <a href="https://ambientimpact.com/" target="_blank">ambientimpact.com</a>
+        </li>
+
+        <li>
+          <a href="https://chrismorgan.info/" target="_blank">chrismorgan.info</a>
+        </li>
+
+        <li>
+          <a href="https://tholman.com/" target="_blank">tholman.com</a>
+        </li>
+
+        <li>
+          <a href="http://www.bananabanana.me/" target="_blank">bananabanana.me</a>
+        </li>
+
+        <li>
+          <a href="https://kokorobot.ca/site/home.html" target="_blank">kokorobot.ca</a>
+        </li>
+
+        <li>
+          <a href="https://jlelse.blog/" target="_blank">jlelse.blog</a>
+        </li>
+
+        <li>
+          <a href="https://www.juliendesrosiers.com/blog.php" target="_blank">juliendesrosiers.com</a>
+        </li>
+
+        <li>
+          <a href="https://archive.elliott.computer/elliott-computer-2019-to-2023/" target="_blank">elliott.computer</a>
+        </li>
+
+        <li>
+          <a href="https://bwamp.org/" target="_blank">bwamp.org</a>
+        </li>
+
+        <li>
+          <a href="https://pluralistic.net/" target="_blank">pluralistic.net</a>
+        </li>
+      </ul>
+-->
+
+
+      <!-- <figure class="img-container">
+        <img src="img/leopard-lacewing.png" alt="A field of sun flowers" width="300" loading="lazy">
+      </figure> -->
     </article>
 
     <!-- PROGRAMMING -->
     <article class="grid">
-      <header>
+      <header class="header-bg programming">
         <h2 id="programming"><a href="#programming" aria-label="link to Programming"><span>#</span></a>Programming</h2>
       </header>
 
@@ -902,14 +975,14 @@
 
       </p>
 
-      <figure class="img-container">
+      <!-- <figure class="img-container">
         <img src="img/rubiks-cube.jpg" alt="Rubiks cube and dice" width="300" loading="lazy">
-      </figure>
+      </figure> -->
     </article>
 
     <!-- SEARCH ENGINEES -->
     <article class="grid">
-      <header>
+      <header class="header-bg search-engines">
         <h2 id="search-engines"><a href="#search-engines" aria-label="link to Search Engines"><span>#</span></a>Search
           Engines</h2>
       </header>
@@ -948,14 +1021,14 @@
           target="_blank">marginalia.nu</a>
       </p>
 
-      <figure class="img-container">
+      <!-- <figure class="img-container">
         <img src="img/library.jpg" alt="A overview of a library" width="300" loading="lazy">
-      </figure>
+      </figure> -->
     </article>
 
     <!-- TOOLS -->
     <article class="grid">
-      <header>
+      <header class="header-bg tools">
         <h2 id="tools"><a href="#tools" aria-label="link to Tools"><span>#</span></a>Tools</h2>
       </header>
 
@@ -974,6 +1047,11 @@
       <p>
         The World Wide Web Consortium has created this tool to validate the markup of web documents
         <a href="https://validator.w3.org/" target="_blank">w3c validator</a>.
+      </p>
+
+      <p>
+        <a href="https://polypane.app/" target="_blank">Polypane</a> is a web browser that helps with every
+        aspect of web development: responsivity, debuging, social media previews, and more!
       </p>
 
       <p>
@@ -1042,14 +1120,14 @@
         Tailwind CSS
       </p>
 
-      <figure class="img-container">
+      <!-- <figure class="img-container">
         <img src="img/tools.jpg" alt="An assortment of tools" width="300" loading="lazy">
-      </figure>
+      </figure> -->
     </article>
 
     <!-- TYPOGRAPHY -->
     <article class="grid">
-      <header>
+      <header class="header-bg typography">
         <h2 id="typography"><a href="#typography" aria-label="link to typography"><span>#</span></a>Typography</h2>
       </header>
 
@@ -1099,18 +1177,18 @@
 
       <p>
         A serif-based font from Google called "Bitter."
-        <a href="https://fonts.google.com/specimen/Bitter" target="_blank">fonts.google.com/specimen/Bitter</a>
+        <a href="https://fonts.google.com/specimen/Bitter" target="_blank">Bitter</a>
       </p>
 
-      <figure class="img-container">
+      <!-- <figure class="img-container">
         <img src="img/calligraphy-brush.jpg" alt="Fridge letters" width="300" loading="lazy">
-      </figure>
+      </figure> -->
 
     </article>
 
     <!-- WEB DESIGN -->
     <article class="grid">
-      <header>
+      <header class="header-bg web-design">
         <h2 id="web-design"><a href="#web-design" aria-label="link to Web Design"><span>#</span></a>Web Design</h2>
       </header>
 
@@ -1121,13 +1199,13 @@
       </p>
 
       <p>
-        The company Exoticsilicon's website has a very uniqe style, and now you can learn from the best from
+        The company Exoticsilicon's website has a very uniqe style, and now you can learn from the very best from
         their <a href="https://research.exoticsilicon.com/design_studio" target="_blank">exoticsilicon design
           studio</a>.
       </p>
 
       <p>
-        A curated list of one pagers! <a href="https://onepagelove.com/" target="_blank">One Page Love</a>.
+        A curated list of single page websites! <a href="https://onepagelove.com/" target="_blank">One Page Love</a>.
       </p>
 
       <p>
@@ -1135,47 +1213,56 @@
           Web Design</a>.
       </p>
 
-
-
-      <p>
+      <!--  <p>
         Some cool menu, tooltips, and carouselsel design can be found here:
         <a href="http://www.menucool.com/" target="_blank">menucool.com</a>
+      </p> -->
+
+      <p>
+        Inspired by CSS Zen Garden Stephanie Eckles has created <a href="https://stylestage.dev/" target="_blank">Style
+          stage</a> The site presents a list of uniqliy designed web-pages!
       </p>
 
       <p>
-        <a href="https://stylestage.dev/" target="_blank">Style stage</a> presents a list of uniqliy
-        designed web-pages!
-      </p>
-
-      <p>
-        A simple way to make the content on your page look great, from
+        Some simple ways to make the content on your page look great, from
         <a href="https://set.studio/some-simple-ways-to-make-content-look-good/" target="_blank">Set Studio</a>
       </p>
 
       <p>
-        Here’s a fascinating look at The Guardian’s design system.
-        <a href="https://design.theguardian.com/" target="_blank">design.theguardian.com</a>
+        Here’s a fascinating look at The Guardian’s design system. <a href="https://design.theguardian.com/"
+          target="_blank">design.theguardian.com</a>
       </p>
 
-      <p>
+      <!-- <p>
         Here are some
         <a href="https://css-tricks.com/print-inspired-layout-on-the-web/" target="_blank">print inspired layouts on the
           web</a>
+      </p> -->
+
+      <p>
+        Donnie D'Amato has written about how designers should rely less on strict columns in their designs. <a
+          href="https://gridless.design/" target="_blank">gridless.design</a>
       </p>
 
       <p>
-        <a href="https://gridless.design/" target="_blank">gridless.design</a>
+        <a href="https://codesalad.dev/blog/color-manipulation-with-css-variables-and-hsl-16"
+          target="_blank">codesalad.dev</a>
+      </p>
+
+      <p>
+        <a href="https://justmarkup.com/articles/2020-04-15-css-property-in-a-tweet/" target="_blank">100 days - 100 CSS
+          properties</a>
       </p>
 
 
-      <figure class="img-container">
+      <!-- <figure class="img-container">
         <img src="img/copenhagen.jpg" alt="A mosaic wall" width="300" loading="lazy">
-      </figure>
+      </figure> -->
     </article>
 
     <!-- WEB DEVLOPMENT -->
     <article class="grid">
-      <header>
+      <header class="header-bg web-development">
         <h2 id="web-development"><a href="#web-development" aria-label="link to Web Development"><span>#</span></a>Web
           Development</h2>
       </header>
@@ -1283,18 +1370,18 @@
       </p>
 
       <p>
-        <a href="https://polypane.app/" target="_blank">Polypane</a> is a web browser that helps with every
-        aspect of web development: responsivity, debuging, social media previews, and more!
+        Free hand-picked HTML, CSS and JavaScript (jQuery, React, Vue) code examples, tutorials and articles.
+        <a href="https://freefrontend.com/" target="_blank">freefrontend.com</a>
       </p>
 
-      <figure class="img-container">
+      <!-- <figure class="img-container">
         <img src="img/honey-bee.jpg" alt="A job meeting" width="300" loading="lazy">
-      </figure>
+      </figure> -->
     </article>
 
     <!-- WEB DIRECTORIES -->
     <article class="grid">
-      <header id="tooltip-header">
+      <header class="header-bg web-directories">
         <h2 id="web-directories"><a href="#web-directories" aria-label="link to Web Directories"><span>#</span></a>Web
           Directories
         </h2>
@@ -1375,26 +1462,10 @@
       </p>
 -->
 
-      <figure class="img-container">
+      <!-- <figure class="img-container">
         <img src="img/library-2.jpg" alt="Large archive of files" width="300" loading="lazy">
-      </figure>
+      </figure> -->
     </article>
-
-    <!-- WEBRINGS
-    <article class="grid">
-      <header>
-        <h2 id="webrings"><a href="#webrings" aria-label="link to Web Rings"><span>#</span></a>Web Rings</h2>
-      </header>
-
-      <ul class="flex-items">
-        <li>
-          <a href="https://firechicken.club/" target="_blank">firechicken.club</a>
-        </li>
-        <li>
-          <a href="https://heaventree.xyz/" target="_blank">heaventree.xyz</a>
-        </li>
-      </ul>
-    </article>-->
   </main>
 
   <footer class="grid">
