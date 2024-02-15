@@ -3,7 +3,7 @@
     --color-light: #fffff8;
     --color-primary: #d42222;
     --color-light-primary: #ffcccc;
-    --font-family: 'Noto Sans', monospace;
+    --font-family: 'Noto Sans', sans-serif;
     --default-padding: 0.5rem;
     --size-step-0: clamp(0.9375rem, 0.8723rem + 0.3261vi, 1.125rem);
     --size-step-1: clamp(1.125rem, 1.0272rem + 0.4891vi, 1.4063rem);
