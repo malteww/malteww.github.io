@@ -131,3 +131,13 @@ figure.img-container {
       color: var(--color-light);
     }
 }
+
+
+hgroup {
+  align-items: center;
+
+  & h2 {
+    outline: none !important;
+  }
+
+}
