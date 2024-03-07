@@ -5,7 +5,7 @@
     --color-light-primary: #ffcccc;
     --font-family: 'Noto Sans', sans-serif;
     --default-padding: 0.45rem;
-    --defult-grid-size: 275px;
+    --defult-grid-size: 300px;
     --default-outline-gap: 1px;
     --size-step--2: clamp(0.651rem, 0.6271rem + 0.1199vi, 0.72rem);
     --size-step--1: clamp(0.7813rem, 0.7399rem + 0.2065vi, 0.9rem);
