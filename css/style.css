@@ -134,11 +134,21 @@ figure.img-container {
   padding: 0;
 
   & img {
-    filter: grayscale(100%);  
     object-fit: cover;
     width: 100%;
     min-height: 200px;
     aspect-ratio: 16/9;
     object-position: center;
+  }
+}
+
+
+.span-2 {
+  grid-column: span 2;
+}
+
+@media (max-width: 680px) {
+  .span-2 {
+    grid-column: 1;
   }
 }
