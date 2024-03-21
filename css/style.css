@@ -94,6 +94,7 @@ menu {
 a {
   color: var(--color-primary);
   text-decoration: none;
+  display: inline-block;
 
   &:hover {
     text-decoration: underline;
@@ -138,7 +139,6 @@ figure.img-container {
   padding: 0;
 
   & img {
-    object-fit: cover;
     width: 100%;
     min-height: 200px;
     aspect-ratio: 16/9;
