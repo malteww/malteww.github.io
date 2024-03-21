@@ -6,8 +6,8 @@ body {
   font-weight: 400;
   padding: calc(var(--default-padding) * 2);
 
-  /* max-width: 90vw;
-  margin-inline: auto;  */
+  max-width: 1920px;
+  margin-inline: auto; 
 }
 
 .header >  * {
@@ -85,6 +85,10 @@ footer {
 
 nav menu li a {
   text-decoration: underline;
+}
+
+menu {
+  --defult-grid-size: 250px;
 }
 
 a {
