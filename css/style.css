@@ -10,6 +10,7 @@ h1,
 h2,
 h3 {
   text-transform: capitalize;
+    font-weight: 500;
 }
 
 h1 {
@@ -105,11 +106,6 @@ nav li a::before {
 
 :target {
   text-decoration: underline 5px solid var(--color-light);
-}
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
 }
 
 ::selection {

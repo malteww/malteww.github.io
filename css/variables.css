@@ -1,15 +1,9 @@
 :root {
-    --color-dark: #2b2121;
+    --color-dark: #111;
     --color-light: #fffff8;
     --color-primary: #d42222;
     --color-light-primary: #ffcccc;
-    --font-family: Inter,
-        Roboto,
-        'Helvetica Neue',
-        'Arial Nova',
-        'Nimbus Sans',
-        Arial,
-        sans-serif;
+    --font-family: Roboto, sans-serif;
     --default-padding: 0.5rem;
     --defult-grid-size: 300px;
     --default-outline-gap: 1px;
