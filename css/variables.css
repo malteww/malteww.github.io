@@ -3,8 +3,14 @@
     --color-light: #fffff8;
     --color-primary: #d42222;
     --color-light-primary: #ffcccc;
-    --font-family: 'Noto Sans', sans-serif;
-    --default-padding: clamp(0.5rem, 0.4873rem + 0.0633vi, 0.5625rem);
+    --font-family: Inter,
+        Roboto,
+        'Helvetica Neue',
+        'Arial Nova',
+        'Nimbus Sans',
+        Arial,
+        sans-serif;
+    --default-padding: 0.5rem;
     --defult-grid-size: 300px;
     --default-outline-gap: 1px;
 --size-step--2: clamp(0.6944rem, 0.6893rem + 0.0259vi, 0.72rem);

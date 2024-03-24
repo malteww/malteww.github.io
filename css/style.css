@@ -3,33 +3,18 @@ body {
   color: var(--color-dark);
   font-family: var(--font-family);
   font-size: var(--size-step-0);
-  font-weight: 400;
-  padding: calc(var(--default-padding) * 2);
-
-  max-width: 90vw;
-  margin-inline: auto; 
+  padding: var(--default-padding);
 }
-
-.header >  * {
-  display: flex;
-  align-items: center;
-}
-
-.header h2 {
-  font-style: italic;
-}
-
 
 h1,
 h2,
 h3 {
   text-transform: capitalize;
-  font-weight: 600;
 }
 
 h1 {
   font-size: var(--size-step-5);
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 h2 {
@@ -73,7 +58,7 @@ footer {
 
   &>li {
     margin: 0.25em;
-    padding: calc(var(--default-padding)/2) var(--default-padding);
+    padding: calc(var(--default-padding)/2);
     outline: var(--default-outline-gap) solid var(--color-dark);
     height: fit-content;
   }
