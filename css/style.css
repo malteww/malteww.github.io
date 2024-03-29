@@ -28,7 +28,6 @@ h3 {
 
 body,
 main {
-  
   display: flex;
   flex-direction: column;
   gap: var(--default-outline-gap);
@@ -121,7 +120,7 @@ figure.img-container {
     width: 100%;
     min-height: 200px;
     aspect-ratio: 16/9;
-      object-fit: cover;
+    object-fit: cover;
   }
 }
 
