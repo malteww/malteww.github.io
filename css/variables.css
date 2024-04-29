@@ -7,7 +7,7 @@
     --default-padding: 0.5rem;
     --defult-grid-size: 300px;
     --default-outline-gap: 1px;
---size-step--2: clamp(0.6944rem, 0.6893rem + 0.0259vi, 0.72rem);
+    --size-step--2: clamp(0.6944rem, 0.6893rem + 0.0259vi, 0.72rem);
     --size-step--1: clamp(0.8333rem, 0.8198rem + 0.0675vi, 0.9rem);
     --size-step-0: clamp(1rem, 0.9747rem + 0.1266vi, 1.125rem);
     --size-step-1: clamp(1.2rem, 1.1582rem + 0.2089vi, 1.4063rem);
