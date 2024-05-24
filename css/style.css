@@ -3,6 +3,7 @@ body {
   color: var(--color-dark);
   font-family: var(--font-family);
   font-size: var(--size-step-0);
+  padding: var(--default-padding);
 }
 
 h1,
