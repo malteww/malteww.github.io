@@ -2,8 +2,8 @@ body {
   background-color: var(--color-light);
   color: var(--color-dark);
   font-family: var(--font-family);
-  font-size: var(--size-step-0);
   padding: var(--default-padding);
+  font-size: var(--size-base);
 }
 
 h1,
@@ -14,16 +14,7 @@ h3 {
 }
 
 h1 {
-  font-size: var(--size-step-5);
   color: var(--color-primary);
-}
-
-h2 {
-  font-size: var(--size-step-3);
-}
-
-h3 {
-  font-size: var(--size-step-2);
 }
 
 body,
@@ -135,10 +126,19 @@ figure.img-container img {
 }
 
 header:has(:target) {
-  background-color: var(--color-light-primary);
-} 
+  animation: colorChange 0.6s cubic-bezier(0.32, 0, 0.67, 0);
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: var(--color-light-primary);
+  }
+
+  100% {
+    background-color: var(--color-light);
+  }
+}
 
 header:has(:target) a {
   background-color: transparent;
 }
-
