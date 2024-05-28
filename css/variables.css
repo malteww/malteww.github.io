@@ -2,11 +2,11 @@
     --color-dark: #111;
     --color-light: #fffff8;
     --color-primary: #d42222;
-    --color-light-primary: hsl(0, 100%, 95%);
-    --font-family: Roboto, sans-serif;
-    --default-padding: 0.5rem;
-    --defult-grid-size: 300px;
-    --default-outline-gap: 1px;
+    --color-light-primary: hsl(0, 100%, 95%);    
+    --font-family: 'Victor Mono', monospace;
+    --default-padding: 0.75rem;
+    --default-grid-size: 300px;
+    --default-outline-gap: 8px;
     --size-base: 100%;
     --size-step--2: clamp(0.6944rem, 0.6893rem + 0.0259vi, 0.72rem);
     --size-step--1: clamp(0.8333rem, 0.8198rem + 0.0675vi, 0.9rem);
