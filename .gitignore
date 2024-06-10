@@ -5,3 +5,4 @@ node_modules
 dist
 .cache
 test.md
+css/vs-code-workspace.code-workspace
