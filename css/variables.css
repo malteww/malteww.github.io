@@ -5,7 +5,7 @@
     --color-light-primary: hsl(0, 100%, 95%);    
     --font-family: 'Victor Mono', monospace;
     --default-padding: 0.75rem;
-    --default-grid-size: 300px;
+    --default-grid-size: 290px;
     --default-outline-gap: 8px;
     --size-base: 100%;
     --size-step--2: clamp(0.6944rem, 0.6893rem + 0.0259vi, 0.72rem);
