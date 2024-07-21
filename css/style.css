@@ -132,7 +132,8 @@ a:focus-visible {
 
 a[href^="http"]:visited,
 a[href^="https://"]:visited {
-  /*background-color: var(--color-light-primary);*/
+  color: var(--color-dark-primary);
+  background-color: var(--color-light-primary);
 }
 
 nav li a {

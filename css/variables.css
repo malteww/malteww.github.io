@@ -2,6 +2,7 @@
     --color-dark: #111;
     --color-light: #fffff8;
     --color-primary: #d42222;
+    --color-dark-primary: #9b0303;
     --color-light-primary: hsl(0, 100%, 95%);    
     --font-family: 'Victor Mono', monospace;
     --default-padding: 0.75rem;
