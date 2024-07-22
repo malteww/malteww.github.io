@@ -3,7 +3,6 @@ body {
   color: var(--color-dark);
   font-family: var(--font-family);
   font-size: var(--size-base);
-  padding: var(--default-padding);
 }
 
 h1,
@@ -18,15 +17,15 @@ h6 {
 
 h1 {
   color: var(--color-primary);
-  font-size: 2.5rem;
+  font-size: 250%;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 200%;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 150%;
 }
 
 .header, .footer {
@@ -41,7 +40,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(min(var(--default-grid-size), 100%), 1fr));
   gap: var(--default-outline-gap);
-  padding: var(--default-padding);
+  padding: 10px;
 }
 
 .grid>* {
@@ -133,7 +132,6 @@ a:focus-visible {
 a[href^="http"]:visited,
 a[href^="https://"]:visited {
   color: var(--color-dark-primary);
-  background-color: var(--color-light-primary);
 }
 
 nav li a {
@@ -190,8 +188,3 @@ header:has(:target) {
 header:has(:target) a {
   background-color: transparent;
 }
-
-/* .header>h1,
-.footer>p {
-  grid-column: 1 / -1;
-} */
