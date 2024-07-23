@@ -1,12 +1,12 @@
 :root {
-    --color-dark: #111;
+    --color-dark: #000;
     --color-light: #fff;
     --color-primary: #d42222;
     --color-dark-primary: #9b0303;
     --color-light-primary: hsl(0, 100%, 95%);    
     --font-family: 'Victor Mono', monospace;
     --default-padding: 0.5rem;
-    --default-grid-size: 300px;
+    --default-grid-size: 17em;
     --default-grid-height: 300px;
     --default-outline-gap: 10px;
     --size-base: 100%;

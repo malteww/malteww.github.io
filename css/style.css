@@ -28,6 +28,11 @@ h3 {
   font-size: 150%;
 }
 
+header.grid>h2:nth-child(2) {
+  display: grid;
+  align-content: center;
+}
+
 .header, .footer {
   --grid-placement: auto-fit;
 }
