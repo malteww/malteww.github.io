@@ -8,7 +8,7 @@
     --default-padding: 0.5rem;
     --default-grid-size: 17em;
     --default-grid-height: 300px;
-    --default-outline-gap: 10px;
+    --default-outline-gap: 5px;
     --size-base: 100%;
     --size-step--2: clamp(0.6944rem, 0.6893rem + 0.0259vi, 0.72rem);
     --size-step--1: clamp(0.8333rem, 0.8198rem + 0.0675vi, 0.9rem);
