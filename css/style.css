@@ -1,15 +1,9 @@
-html {
-  background-color: var(--color-light);
-}
 
 body {
   background-color: var(--color-light);
   color: var(--color-dark);
   font-family: var(--font-family);
-  font-size: var(--size-base);
-
-  max-width: 1530px;
-  margin-inline: auto;
+  font-size: 125%;
 }
 
 h1,
@@ -25,7 +19,7 @@ h6 {
 h1 {
   color: var(--color-primary);
   font-size: 250%;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h2 {
