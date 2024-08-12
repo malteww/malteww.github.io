@@ -35,7 +35,7 @@ menu {
 
 body {
     min-height: 100vh;
-    line-height: 1.6;
+    line-height: 1.4;
     hyphens: auto
 }
 
@@ -46,7 +46,7 @@ h4,
 button,
 input,
 label {
-    line-height: 1.1
+    line-height: 1
 }
 
 img,
@@ -62,12 +62,64 @@ picture {
     }
 }
 
+/* noto-sans-regular - latin */
 @font-face {
     font-display: swap;
-    font-family: 'Duru Sans';
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/duru-sans-v20-latin-regular.woff2) format('woff2'), url(/fonts/duru-sans-v20-latin-regular.ttf) format('truetype')
+    src:
+        local("Noto Sans"),
+        url('/fonts/noto-sans-v36-latin-regular.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('/fonts/noto-sans-v36-latin-regular.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* noto-sans-italic - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans';
+    font-style: italic;
+    font-weight: 400;
+    src:
+        local("Noto Sans Italic"),
+        url('/fonts/noto-sans-v36-latin-italic.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('/fonts/noto-sans-v36-latin-italic.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* noto-sans-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    src:
+        local("Noto Sans"),
+        url('/fonts/noto-sans-v36-latin-500.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('/fonts/noto-sans-v36-latin-500.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* noto-sans-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    src:
+        local("Noto Sans"),
+        url('/fonts/noto-sans-v36-latin-600.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('/fonts/noto-sans-v36-latin-600.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 :root {
@@ -76,14 +128,14 @@ picture {
     --color-primary: #d42222;
     --color-dark-primary: #9b0303;
     --color-light-primary: hsl(0, 100%, 95%);
-    --font-family: 'Duru Sans', serif;
-    --default-padding: 0.5rem;
-    --default-grid-size: 350px;
+    --font-family: 'Noto Sans', serif;
+    --default-padding: 0.75rem;
+    --default-grid-size: 15em;
     --default-grid-height: 15em;
     --default-outline-gap: 5px;
-    --size-base: 100%;
+    --base-font-size: 115%;
     --size-step--2: clamp(0.6944rem, 0.6893rem + 0.0259vi, 0.72rem);
-    --size-step--1: clamp(0.8333rem, 0.8198rem + 0.0675vi, 0.9rem);
+    --size-step--1: clamp(0.8333rem17.6, 0.8198rem + 0.0675vi, 0.9rem);
     --size-step-0: clamp(1rem, 0.9747rem + 0.1266vi, 1.125rem);
     --size-step-1: clamp(1.2rem, 1.1582rem + 0.2089vi, 1.4063rem);
     --size-step-2: clamp(1.44rem, 1.3756rem + 0.3218vi, 1.7578rem);
@@ -96,7 +148,7 @@ body {
     background-color: var(--color-light);
     color: var(--color-dark);
     font-family: var(--font-family);
-    font-size: 125%
+    font-size: var(--base-font-size);
 }
 
 h1,
@@ -141,7 +193,7 @@ header.grid>h2:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(min(var(--default-grid-size), 100%), 1fr));
     gap: var(--default-outline-gap);
-    padding: 10px
+    padding: var(--default-padding);
 }
 
 .grid>* {
