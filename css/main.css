@@ -62,7 +62,7 @@ picture {
     --default-grid-size: 17em;
     --default-grid-height: 15em;
     --default-outline-gap: 5px;
-    --base-font-size: 115%;
+    --base-font-size: 110%;
     --size-step--2: clamp(0.6944rem, 0.6893rem + 0.0259vi, 0.72rem);
     --size-step--1: clamp(0.8333rem17.6, 0.8198rem + 0.0675vi, 0.9rem);
     --size-step-0: clamp(1rem, 0.9747rem + 0.1266vi, 1.125rem);
