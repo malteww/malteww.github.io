@@ -62,7 +62,7 @@ picture {
     --default-grid-size: 15em;
     --default-grid-height: 15em;
     --default-outline-gap: 5px;
-    --base-font-size: 110%;
+    --base-font-size: var(--size-step-0);
     --size-step--2: clamp(0.6944rem, 0.6893rem + 0.0259vi, 0.72rem);
     --size-step--1: clamp(0.8333rem17.6, 0.8198rem + 0.0675vi, 0.9rem);
     --size-step-0: clamp(1rem, 0.9747rem + 0.1266vi, 1.125rem);
@@ -92,16 +92,16 @@ h6 {
 
 h1 {
     color: var(--color-primary);
-    font-size: 250%;
+    font-size: var(--size-step-4);
     font-weight: 600
 }
 
 h2 {
-    font-size: 200%
+    font-size: var(--size-step-3);
 }
 
 h3 {
-    font-size: 150%
+    font-size: var(--size-step-2);
 }
 
 header.grid>h2:nth-child(2) {
