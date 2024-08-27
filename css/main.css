@@ -181,9 +181,6 @@ nav menu li a::after {
     transition: transform 0.3s ease
 }
 
-nav menu li a:hover::after {
-    transform: scaleX(1)
-}
 
 a {
     color: var(--color-primary);
@@ -193,7 +190,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    text-underline-offset: .325em
+    text-underline-offset: .3ex;
 }
 
 a[href^="http"]::after,
