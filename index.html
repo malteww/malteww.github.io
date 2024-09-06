@@ -1124,6 +1124,13 @@
     <p>Created by Malte <time datetime="2024">2024</time></p>
   </footer>
 
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register('/service-worker.js');
+    }
+
+  </script>
+
 </body>
 
 </html>
