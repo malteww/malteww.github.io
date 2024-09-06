@@ -13,6 +13,21 @@
       "type": "image/png"
     }
   ],
+  "screenshots": [
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Application"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "label": "Application"
+    }
+  ],
   "theme_color": "#000",
   "background_color": "#000",
   "display": "standalone",
