@@ -78,6 +78,7 @@ body {
     color: var(--color-dark);
     font-family: var(--font-family);
     font-size: var(--base-font-size);
+    padding: 1rem;
 }
 
 h1,
@@ -92,44 +93,50 @@ h6 {
 
 h1 {
     color: var(--color-primary);
-    font-size: var(--size-step-4);
-    font-weight: 600
+    font-size: var(--size-step-5);
+    font-weight: 600;
 }
 
 h2 {
-    font-size: var(--size-step-3);
+    font-size: var(--size-step-4);
 }
 
 h3 {
     font-size: var(--size-step-2);
 }
 
-header.grid>h2:nth-child(2) {
-    display: grid;
-    align-content: center
-}
-
 .header,
-.footer {
-    --grid-placement: auto-fit
+.footer, nav ul {
+    --grid-placement: auto-fit;
 }
 
-.header h2 {
-    font-style: italic
+.header h1 {
+    grid-column: 1 / 3;
+    padding-block: 1.25rem !important;
+}
+
+header:not(.header) {
+    grid-column: 1/-1;
+    grid-row: 1 / span 1;
+    padding-block: 1.25rem !important;
+
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(min(var(--default-grid-size), 100%), 1fr));
-    gap: var(--default-outline-gap);
-    padding: var(--default-padding);
+    grid-auto-flow: dense;
+    outline: 1px solid var(--color-dark);
+    margin: 1px;
 }
 
 .grid>* {
     padding: var(--default-padding);
     background-color: var(--color-light);
-    border: 1px solid var(--color-dark)
+    outline: 1px solid var(--color-dark)
 }
+
+
 
 .flex-items {
     display: flex;
@@ -154,39 +161,20 @@ nav {
     text-transform: capitalize
 }
 
-.nav {
-    outline: 1px solid var(--color-dark);
-    margin-inline: var(--default-padding)
-}
-
-.nav h2 {
-    padding: var(--default-padding)
-}
-
-nav menu li a {
-    text-decoration: none;
-    color: var(--color-primary);
-    position: relative
-}
-
-nav menu li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-primary);
-    transform: scaleX(0);
-    transition: transform 0.3s ease
+nav a {
+    color: var(--color-dark);
 }
 
 
 a {
     color: var(--color-primary);
-    text-decoration: none;
     background-color: var(--color-light);
     word-break: break-all;
+}
+
+a:not(nav a) {
+    text-decoration: none;
+
 }
 
 a:hover {
@@ -207,16 +195,6 @@ a:focus-visible {
 a[href^="http"]:visited,
 a[href^="https://"]:visited {
     color: var(--color-dark-primary)
-}
-
-nav li a {
-    color: var(--color-dark)
-}
-
-nav li a::before {
-    content: '#';
-    padding-right: 2px;
-    color: var(--color-primary)
 }
 
 ::selection {
@@ -255,6 +233,12 @@ figure.img-container img {
     .span-2,
     .span-3 {
         grid-column: 1
+    }
+}
+
+@media (max-width: 779px) {
+    hgroup > div {
+        display: none;
     }
 }
 
