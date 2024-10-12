@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HTML_FILE="index.html"
+HTML_FILE="../index.html"
 
 # Extract all valid URLs from anchor tags in the HTML file (excluding those starting with #)
 URLS=$(grep -oP '(?<=<a href=")[^"]*' "$HTML_FILE" | grep -v '^#')
