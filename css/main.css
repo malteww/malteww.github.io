@@ -98,10 +98,10 @@ picture {
     --color-dark-primary: #9b0303;
     --color-light-primary: hsl(0, 100%, 95%);
     --font-family: "Noto Sans", serif;
-    --default-padding: .55em;
-    --default-padding-rem: 0.55rem;
-    --default-grid-size: 17em;
-    --default-grid-height: 10em;
+    --default-padding: .5em;
+    --default-padding-rem: 0.5rem;
+    --default-grid-size: 15em;
+    --default-grid-height: clamp(6rem, 9em, 12rem);
     --default-outline-gap: 5px;
     --base-font-size: var(--size-step-0);
     --size-step--2: clamp(0.6944rem, 0.6893rem + 0.0259vi, 0.72rem);
@@ -119,7 +119,7 @@ body {
     color: var(--color-dark);
     font-family: var(--font-family);
     font-size: var(--size-step-0);
-    padding: 2em;
+    padding: clamp(.5rem, 1rem, 2rem);
 }
 
 h1,
