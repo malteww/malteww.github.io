@@ -100,7 +100,7 @@ picture {
     --font-family: "Noto Sans", serif;
     --default-padding: .5em;
     --default-padding-rem: 0.5rem;
-    --default-grid-size: 15em;
+    --default-grid-size: 30ch;
     --default-grid-height: clamp(6rem, 9em, 12rem);
     --default-outline-gap: 5px;
     --base-font-size: var(--size-step-0);
