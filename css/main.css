@@ -123,7 +123,14 @@ body {
     font-variation-settings:
     "wdth" 100;
     font-size: var(--size-step-0);
-    padding: clamp(1rem, 2.5rem, 3.5rem);
+    padding: 3rem;
+
+}
+
+@media (max-width:400px) {
+    body {
+        padding: 1rem;
+    }
 }
 
 .wrapper {
@@ -144,6 +151,7 @@ h6 {
 h1 {
     color: var(--color-primary);
     font-size: var(--size-step-5);
+    padding-block: 2rem !important;
 }
 
 h2 {
